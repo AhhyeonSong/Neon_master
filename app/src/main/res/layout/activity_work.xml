@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6b6b6"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/write"
+                android:id="@+id/btn_write"
+                />
+
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/font"
+                android:id="@+id/btn_font"
+                />
+
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/palette"
+                android:id="@+id/btn_chcolor"
+                />
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_neoncolor"
+                android:background="@drawable/neon_color"
+                ></ImageButton>
+
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_neon"
+                android:background="@drawable/neon"
+                />
+
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_blur"
+                android:background="@drawable/blur"
+                />
+
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_save"
+                android:background="@drawable/download"
+
+                ></ImageButton>
+
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_share"
+                android:background="@drawable/share"
+
+                ></ImageButton>
+            <!--<Button-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:id="@+id/btn_tblur"-->
+                <!--android:text="진짜 블러처리"-->
+                <!--&gt;</Button>-->
+
+
+        </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/back"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_write"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_alignBottom="@+id/back"
+                android:layout_alignLeft="@+id/back"
+                android:layout_alignRight="@+id/back"
+                android:layout_alignTop="@+id/back"
+              />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/blur_write"-->
+                <!--android:layout_alignBottom="@id/back"-->
+                <!--android:layout_alignLeft="@id/back"-->
+                <!--android:layout_alignRight="@id/back"-->
+                <!--android:layout_alignTop="@id/back"-->
+                <!--android:shadowColor="#ffffff"-->
+                <!--android:shadowDx="0"-->
+                <!--android:shadowDy="0"-->
+                <!--android:shadowRadius="20"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#000000"-->
+                <!--/>-->
+
+        </RelativeLayout>
+        <LinearLayout  android:id="@+id/bar"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <SeekBar
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/seekBar1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
